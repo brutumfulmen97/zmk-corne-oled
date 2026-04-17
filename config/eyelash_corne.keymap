@@ -39,9 +39,10 @@
         l_mt: l_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <280>;
             quick-tap-ms = <280>; // This enables the double-tap-to-repeat
+            require-prior-idle-ms = <280>;
             bindings = <&kp>, <&kp>;
         };
     };
